@@ -81,7 +81,7 @@ module CC
           "--memory-swap", "-1",
           "--net", "none",
           "--rm",
-          "--volume", "#{code.host_path}:/code:ro",
+          "--volume", "#{code.host_path}:/code:rw",
           "--volume", "#{config_file.host_path}:/config.json:ro",
           "--user", "9000:9000"
         ]
