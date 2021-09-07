@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+new_version=$(< $1)
+echo "::set-env name=VERSION::$new_version"
